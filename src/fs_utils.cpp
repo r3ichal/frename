@@ -6,7 +6,6 @@
 #include <utility>
 #include <vector>
 
-// get_gaps - from directory and std string get an ordered set of gaps, and highest index between them
 gap_info get_gaps(const fs::path &directory, const std::string &standard) {
   fs::directory_iterator it(directory);
   fs::directory_iterator end;
@@ -26,7 +25,6 @@ gap_info get_gaps(const fs::path &directory, const std::string &standard) {
             info.highest = value;
           }
         }
-        continue;
       }
     }
   }
