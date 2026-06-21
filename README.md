@@ -46,7 +46,7 @@ frename -d <directory> -s <standard> [-l <delimiter>] [-r] [-h]
 
 ### Example
 
-Directory `./photos` contains 4 files: `img_1.jpg`, `img_3.jpg`, `vacation.jpg`, `screenshot.png`.
+Directory `./photos` contains 4 files: `img_0.jpg`, `img_2.jpg`, `vacation.jpg`, `screenshot.png`.
 
 ```bash
 frename -d ./photos -s img -l _
