@@ -1,0 +1,49 @@
+.TH FRENAME 1 "June 2026" "frename 1.0.0" "User Commands"
+.SH NAME
+frename \- rename files in bulk via a user-provided naming standard
+.SH SYNOPSIS
+.B frename
+.RB [ \-d
+.IR directory ]
+.RB [ \-s
+.IR standard ]
+.RB [ \-l
+.IR delimiter ]
+.RB [ \-r ]
+.RB [ \-h ]
+.SH DESCRIPTION
+.B frename
+scans a directory for files matching a naming standard, finds gaps in the
+numeric sequence, and renames files to fill those gaps before extending
+the sequence.
+.SH OPTIONS
+.TP
+.BR \-d " " \fIdirectory\fR
+Target directory to scan.
+.TP
+.BR \-s " " \fIstandard\fR
+Base filename standard to match (e.g. \fIimg\fR for files like \fIimg_1.jpg\fR).
+.TP
+.BR \-l " " \fIdelimiter\fR
+Delimiter separating the standard from the index. Default: \fI_\fR.
+.TP
+.B \-r
+Preview changes without renaming any files.
+.TP
+.B \-h
+Show usage information.
+.SH EXAMPLES
+.TP
+frename \-d ./photos \-s img \-l _
+Directory \fI./photos\fR contains \fIimg_1.jpg\fR, \fIimg_3.jpg\fR,
+\fIvacation.jpg\fR, \fIscreenshot.png\fR. The first two already match the
+standard and are left untouched. The other two don't match it, so they
+are renamed to fill the gap and extend the sequence, becoming
+\fIimg_2.jpg\fR and \fIimg_4.jpg\fR.
+.TP
+frename \-d ./photos \-s img \-r
+Preview without applying changes.
+.SH LICENSE
+MIT
+.SH AUTHOR
+Written by r3ichal.

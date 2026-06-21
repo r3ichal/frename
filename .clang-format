@@ -1,0 +1,29 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+IndentWidth: 2
+ContinuationIndentWidth: 2
+UseTab: Never
+TabWidth: 2
+IndentCaseLabels: true
+
+
+ColumnLimit: 120
+BinPackParameters: false
+BinPackArguments: false
+AllowAllParametersOfDeclarationOnNextLine: false
+
+
+AlignOperands: DontAlign
+AlignAfterOpenBracket: DontAlign
+
+
+BreakBeforeTernaryOperators: true
+BreakAfterReturnType: None
+
+
+DerivePointerAlignment: false
+PointerAlignment: Right
+ReferenceAlignment: Pointer
+...
