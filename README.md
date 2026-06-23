@@ -52,7 +52,7 @@ Directory `./photos` contains 4 files: `img_0.jpg`, `img_2.jpg`, `vacation.jpg`,
 frename -d ./photos -s img -l _
 ```
 
-`img_0.jpg` and `img_2.jpg` already match the standard and are left untouched. `vacation.jpg` and `screenshot.png` don't match it, so they're renamed to fill the gap below the highest index and extend past it — becoming `img_1.jpg` and `img_3.jpg`.
+`img_0.jpg` and `img_2.jpg` already match the standard and are left untouched. `vacation.jpg` and `screenshot.png` don't match it, so they're renamed to fill the gap below the highest index and extend past it — becoming `img_1.jpg` and `img_3.png`.
 
 To preview without applying:
 
