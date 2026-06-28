@@ -59,3 +59,6 @@ To preview without applying:
 ```bash
 frename -d ./photos -s img -r
 ```
+
+## License
+GNU GPL v3.0 — see [LICENSE](LICENSE)
